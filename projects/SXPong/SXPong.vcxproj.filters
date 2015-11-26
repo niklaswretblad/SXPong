@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SXPong">
+      <UniqueIdentifier>{6462E1CF-5004-0CA6-39BF-1FFA250093F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libpng1619">
+      <UniqueIdentifier>{12A1D6D7-FE58-1825-6760-F1805337B315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib-1.2.8">
+      <UniqueIdentifier>{DA308B12-C6E8-CC5F-2FF0-A5BB1BC76750}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\SXPong\alphabet.png">
+      <Filter>SXPong</Filter>
+    </None>
+    <None Include="..\..\src\SXPong\seacross_icon.bmp">
+      <Filter>SXPong</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\SXPong\Ball.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\CollisionCheck.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\Constants.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\Game.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\GameObject.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\Networker.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\Player.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\Renderer.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\Structs.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\guicon.h">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\stdafx.h">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng1619\png.h">
+      <Filter>libpng1619</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng1619\pngconf.h">
+      <Filter>libpng1619</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng1619\pngdebug.h">
+      <Filter>libpng1619</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng1619\pnginfo.h">
+      <Filter>libpng1619</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng1619\pnglibconf.h">
+      <Filter>libpng1619</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng1619\pngpriv.h">
+      <Filter>libpng1619</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng1619\pngstruct.h">
+      <Filter>libpng1619</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\crc32.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\deflate.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\gzguts.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\inffast.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\inffixed.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\inflate.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\inftrees.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\trees.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\zconf.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\zlib.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zlib-1.2.8\zutil.h">
+      <Filter>zlib-1.2.8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\SxConnector.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SXPong\SxTypes.hpp">
+      <Filter>SXPong</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\SXPong\Ball.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\CollisionCheck.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\Game.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\GameObject.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\Main.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\Networker.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\Player.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\Renderer.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\guicon.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\stdafx.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\png.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngerror.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngget.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngmem.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngpread.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngread.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngrio.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngrtran.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngrutil.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngset.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngtrans.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngwio.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngwrite.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngwtran.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng1619\pngwutil.c">
+      <Filter>libpng1619</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\adler32.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\compress.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\crc32.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\deflate.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\gzclose.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\gzlib.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\gzread.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\gzwrite.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\infback.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\inffast.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\inflate.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\inftrees.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\trees.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\uncompr.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlib-1.2.8\zutil.c">
+      <Filter>zlib-1.2.8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SXPong\SxConnector.cpp">
+      <Filter>SXPong</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
