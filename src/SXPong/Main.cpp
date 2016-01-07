@@ -5,6 +5,7 @@
 #define _WINSOCKAPI_ 
 #define _CRTDBG_MAP_ALLOC
 #include "stdafx.h"
+#include <WindowsX.h>
 #include <stdlib.h>
 #include <crtdbg.h>
 #include "Constants.hpp"

@@ -12,6 +12,7 @@ Game::Game(HWND hWnd) : opponentScore(0), renderer(hWnd)
 	player.setAsLeftPlayer();
 	renderer.setLeftPlayerStrings();
 	renderer.createDrawingBuffers(hWnd);
+	this->hWnd = hWnd;
 	gameState.state = State::INMAINMENU;
 }
 
@@ -162,13 +163,16 @@ void Game::handleMessage(Packet packet)
 			break;
 		case State::FOUNDGAME:
 			gameState.state = State::INGAME;
+			ShowCursor(false);
 			break;
 		case State::INWINSCREEN:
 			fullRestart();
 			gameState.state = State::INGAME;
+			ShowCursor(false);
 			break;
 		case State::SOMEONESCORED:
 			gameState.state = State::INGAME;
+			ShowCursor(false);
 			reset();
 			break;
 		default:
@@ -178,6 +182,7 @@ void Game::handleMessage(Packet packet)
 	case YOUSCOREDMSG:
 		if (gameState.state != State::SOMEONESCORED && gameState.state != State::INWINSCREEN && (gameState.state == State::INGAME && !hasBall))
 		{
+			ShowCursor(true);
 			player.incrementScore();
 			setScoreStrings();
 			gameState.latestScorer = LatestScorer::ME;
@@ -191,6 +196,7 @@ void Game::handleMessage(Packet packet)
 	case YOUWONMSG:
 		if (gameState.state == State::INGAME && player.getScore() > 0)
 		{
+			ShowCursor(true);
 			gameState.state = State::INWINSCREEN;
 			gameState.latestScorer = LatestScorer::ME;
 		}
@@ -267,7 +273,7 @@ void Game::collisionCheck()
 			opponentScore++;
 			gameState.latestScorer = LatestScorer::OPPONENT;
 			setScoreStrings();
-
+			ShowCursor(true);
 			if (opponentScore >= ROUNDS_TO_WIN)
 			{
 				gameState.state = State::INWINSCREEN;
@@ -327,12 +333,22 @@ void Game::handleRawKeyPress(UINT keyCode)
 void Game::handleRawMouseInput(RAWINPUT* rawInput)
 {
 	bool buttonState;
+	if (gameState.state == State::INGAME)
+	{
+		int yPosRelative = rawInput->data.mouse.lLastY;
+		if (player.getY() > 0 && (player.getY() + player.getHeight()) < 100)
+			player.setY(player.getY() + yPosRelative);
+		RECT rect = {};
+		GetClientRect(hWnd, &rect);
+		SetCursorPos((rect.left + ((rect.right - rect.left) / 2)), ((rect.bottom - rect.top) / 2) + rect.top);
+	}
+
 	if (buttonState = rawInput->data.mouse.ulButtons & RI_MOUSE_LEFT_BUTTON_DOWN)
 	{
 		switch (gameState.state)
 		{
 		case State::INGAME:
-			player.setDirection(Direction::UP);
+			//player.setDirection(Direction::UP);
 			break;
 		case State::INMAINMENU:
 			break;
@@ -353,7 +369,7 @@ void Game::handleRawMouseInput(RAWINPUT* rawInput)
 		switch (gameState.state)
 		{
 		case State::INGAME:
-			player.setDirection(Direction::DOWN);
+			//player.setDirection(Direction::DOWN);
 			break;
 		case State::INMAINMENU:
 			break;

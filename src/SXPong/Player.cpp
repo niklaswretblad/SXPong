@@ -34,7 +34,7 @@ void Player::move(long deltaTime)
 
 void Player::setY(double y)
 {
-	if (y > 0 && y < 100)
+	if (y > 0 && y < 100 - height)
 	{
 		this->y = y;
 	}

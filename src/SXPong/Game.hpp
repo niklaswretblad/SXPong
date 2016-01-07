@@ -29,6 +29,7 @@ public:
 	void handleMouseMove(int x, int y);
 
 private:
+	HWND hWnd;
 	Player player;
 	Ball ball;
 	unsigned long lastTime;
